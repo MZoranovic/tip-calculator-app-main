@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+:root{
+    --veryDarkCyan: #00474B;
+    --darkGrayishCyan: #5E7A7D;
+    --grayishCyan: #7F9D9F;
+    --lightGrayishCyan: #C5E4E7;
+    --veryLIghtGrayishCyan: #F3F9FA;
+    --StrongCyan: #26C2AE;
+    --LightCyan: #9FE8DF;
+    --White : #FFF;
+    --Red: #E17457;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', sans-serif;
+}
+
+body{
+    background-color: var(--lightGrayishCyan);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    background-color: var(--lightGrayishCyan);
+}
+
+.logo{
+    position: absolute;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.calculator{
+    display: flex;
+    background-color: var(--White);
+    width: 920px;
+    height: 481px;
+    margin-top: 100px;
+    border-radius: 25px;
+    box-shadow: 0px 32px 43px 0px rgba(79, 166, 175, 0.20);
+}
+
+.leftSide{
+    padding: 3rem;
+}
+
+h4{
+    color: var(--darkGrayishCyan);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.amount, .peopleNum{
+    background-color: var(--veryLIghtGrayishCyan);
+    width: 379px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.amount input, .peopleNumInput{
+    background-color: var(--veryLIghtGrayishCyan);
+    width: 340px;
+    padding: 1rem;
+    border: none;
+}
+
+input[type="text"],
+input[type="text"]:focus,
+input[type="text"]:focus-visible {
+    border: 0;
+    outline: none;
+}
+
+.dollarIcon, .personIcon{
+    margin-left: 10px;
+}
+
+.tips{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3,1fr);
+    width: 379px; 
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+[type="radio"] {
+    position: absolute;
+    top: -1000%;
+  }
+
+.tipBtn, .customBtn{
+    background-color: var(--veryDarkCyan);
+    color: var(--White);
+    width: 117px;
+    height: 48px;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.customBtn{
+    background-color: var(--veryLIghtGrayishCyan);
+    color: var(--grayishCyan);
+}
+
+.tipBtn:hover{
+    background-color: var(--StrongCyan);
+    color: var(--veryDarkCyan);
+}
+
+.tipBtn:active{
+    background-color: var(--StrongCyan);
+    color: var(--veryDarkCyan);
+}
+
+.customInput{
+    background-color: var(--veryLIghtGrayishCyan);
+    color: var(--veryDarkCyan);
+}
+
+
+.peopleNumText{
+    display: flex;
+    justify-content: space-between;
+}
+
+.peopleNumText h4{
+    display: none;
+}
+
+.noZero h4{
+    display: block;
+}
+
+.noZero + .peopleNum{
+    border: 1px solid red;
+}
+
+
+.rightSide{
+    width: 413px;
+    height: 417px;
+    background-color: var(--veryDarkCyan);
+    padding: 3rem;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.tipAmount, .totalAmount{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.totalAmount{
+    margin-top: 30px;
+}
+
+.tipAmountText{
+    color: var(--White);
+}
+
+h5{
+    color: var(--grayishCyan);
+}
+
+.tipAmnt{
+    color: var(--StrongCyan);
+    font-size: 48px;
+}
+
+.resetBtn{
+    background-color: var(--StrongCyan);
+    color: var(--veryDarkCyan);
+    width: 333px;
+    height: 48px;
+    margin-top: 100px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.resetBtn:hover{
+    background-color: var(--LightCyan);
+}
